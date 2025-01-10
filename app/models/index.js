@@ -7,7 +7,7 @@ const sequelize = new dataType(
     config.PASSWORD, 
     {
         host: config.HOST,
-        dialect: config.dialect
+        dialect: config.DIALECT
     }
 );
 

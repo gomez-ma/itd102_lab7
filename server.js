@@ -3,6 +3,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const PORT = process.env.APP_PORT || 5000;
+// Allow json format
+app.use(express.json());
 
 // Db connection
 const db = require('./app/models');
